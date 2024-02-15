@@ -1,0 +1,50 @@
+{
+  "name": "itemPickup",
+  "tree": {
+    "$className": "DataModel",
+
+    "ReplicatedStorage": {
+      "$ignoreUnknownInstances": true,
+      "$className": "ReplicatedStorage",
+      "src": {
+        "$className": "Folder",
+        "$path": "src/ReplicatedStorage",
+        "$ignoreUnknownInstances": false
+      }
+    },
+
+    "ServerScriptService": {
+      "$ignoreUnknownInstances": true,
+      "$className": "ServerScriptService",
+      "src": {
+        "$className": "Folder",
+        "$path": "src/ServerScriptService"
+      }
+    },
+
+    "ServerStorage": {
+      "$ignoreUnknownInstances": true,
+      "$className": "ServerStorage",
+      "src": {
+        "$className": "Folder",
+        "$path": "src/ServerStorage"
+      }
+      
+    },
+
+    "StarterPlayer": {
+      "$ignoreUnknownInstances": true,
+      "$className": "StarterPlayer",
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "src": {
+          "$className": "Folder",
+          "$path": "src/StarterPlayerScripts"
+        },
+        "$path": "StarterPlayerScripts"
+      }
+      
+    }
+
+  }
+}
