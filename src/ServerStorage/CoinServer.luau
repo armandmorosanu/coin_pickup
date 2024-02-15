@@ -74,9 +74,6 @@ local function markAsCoin(instance: BasePart, value: number)
 	-- plus we can easily author these without any coding in studio
 end
 
-
-
-
 return {
 	getPlayerCoins = function(player: Player): number
 		return playerCoins[player]

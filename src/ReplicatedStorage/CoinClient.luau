@@ -18,7 +18,7 @@ end)
 local coinEvents = {} -- store .touched events
 
 local function initializeCoinEvent(coinInstance: BasePart)
-    assert(coinInstance:IsA("BasePart"), `{coinInstance} must be a BasePart to be a coin!`)
+	assert(coinInstance:IsA("BasePart"), `{coinInstance} must be a BasePart to be a coin!`)
 	assert(coinEvents[coinInstance] == nil, `instance {coinInstance} is already a coin!`)
 
 	local event = coinInstance.Touched:Connect(function(touchedBy: BasePart)
@@ -61,11 +61,11 @@ end)
 CollectionService:GetInstanceRemovedSignal(COIN_TAG):Connect(function(coinInstance)
 	-- i believe this event gets called when coinInstance is destroyed, so no need to
 	-- hook cleanupCoin into .Destroying
-    -- (edit: after testing^ it does get called)
+	-- (edit: after testing^ it does get called)
 
-    warn(`cleaning up {coinInstance}!`)
+	warn(`cleaning up {coinInstance}!`)
 	cleanupCoin(coinInstance)
-    print(coinEvents) -- this should only have 3 entries
+	print(coinEvents) -- this should only have 3 entries
 end)
 
 return {}
